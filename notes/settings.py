@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 import dj_database_url
 
 load_dotenv()  # Questo carica le variabili d'ambiente da .env
-# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+# ALLOWED_HOSTS = ['*']
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
